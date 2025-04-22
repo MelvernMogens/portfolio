@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melvern Mogens - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+
+</head>
+<body>
+  <header>
+    <h1>Melvern Mogens</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Portfolio</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">Contact ▾</button>
+        <div class="dropdown-content" id="dropdownMenu">
+          <a href="https://linkedin.com/in/melvern-mogens" target="_blank">LinkedIn</a>
+          <a href="https://github.com/MelvernMogens" target="_blank">GitHub</a>
+          <a href="https://wa.me/6282269355735" target="_blank">WhatsApp</a>
+          <a href="mailto:melvernmogens@gmail.com">Email</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h3>My Projects</h3>
+      <div class="project-grid">
+        <!-- Project Cards -->
+        <div class="project-card">
+          <img src="1.jpg" alt="E-commerce Website">
+          <h4>Functioning E-commerce Website using WordPress - Elex</h4>
+          <p>Developed a fully functional e-commerce website using WordPress with custom domain, Xendit integration, and end-to-end deployment.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="2.jpg" alt="License Plate Detection">
+          <h4>YOLOv5 Licensed Plate Detection</h4>
+          <p>Created a YOLOv5-based license plate detector with Flask, handling data collection, training, deployment, and real-time accuracy tuning.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="3.jpg" alt="Eduquest App">
+          <h4>Mobile App Development - Eduquest</h4>
+          <p>Developed a learning app using Flutter and Django with user authentication, course tracking, and responsive UI/UX.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="4.jpg" alt="Side Scroller Game">
+          <h4>Simple PyGame Side Scroller Game</h4>
+          <p>Built a 2D side-scrolling game using PyGame with animations, scoring, user control, and basic collision logic.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Melvern Mogens</p>
+  </footer>
+
+  <script>
+    function toggleDropdown() {
+      document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          dropdowns[i].classList.remove('show');
+        }
+      }
+    };
+  </script>
+</body>
+</html>
