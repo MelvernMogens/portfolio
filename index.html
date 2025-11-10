@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melvern Mogens - Portfolio</title>
+  <link rel="icon" type="image/png" href="static/images/logo.png" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/preloader.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <div id="preloader">
+    <div class="loader-container">
+      <div class="loader-text-wrapper"><div class="loader-text">Melvern Mogens</div></div>
+      <div class="progress-bar-container"><div id="progressBar"></div></div>
+      <div class="status-bar"><span class="status-text">Initializing...</span><span id="progressPercent">0%</span></div>
+    </div>
+  </div>
+
+  <div id="hamburgerBtn" class="hamburger-menu"><i class="fa fa-bars"></i></div>
+
+  <div id="offCanvasMenu" class="off-canvas-menu">
+    <div class="close-btn" onclick="toggleOffCanvasMenu()"><i class="fa fa-times"></i></div>
+    <div class="off-canvas-header">
+      <h3 class="off-canvas-name">Melvern Mogens</h3>
+      <p class="off-canvas-title">Software Developer & AI Developer</p>
+      <hr class="off-canvas-divider" />
+    </div>
+    <nav class="off-canvas-nav">
+      <a href="#heroSection" onclick="toggleOffCanvasMenu()">Home</a>
+      <a href="#aboutSection" onclick="toggleOffCanvasMenu()">About</a>
+      <a href="#skillsSection" onclick="toggleOffCanvasMenu()">Skills</a>
+      <a href="#experienceSection" onclick="toggleOffCanvasMenu()">Experience</a>
+      <a href="#honorsSection" onclick="toggleOffCanvasMenu()">Honors & Awards</a>
+      <a href="#projects" onclick="toggleOffCanvasMenu()">Projects</a>
+    </nav>
+    <hr class="off-canvas-divider" />
+    <div class="off-canvas-social">
+      <a href="https://github.com/MelvernMogens" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/melvern-mogens" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:melvernmogens@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a href="https://wa.me/6282269355735" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    </div>
+    <a href="https://drive.google.com/file/d/13pcpf9UMzwTvMK8EPpr7110bKnZV0ThK/view?usp=sharing" target="_blank" class="btn primary-btn view-resume-btn"><i class="fa fa-file-alt"></i> View Resume</a>
+  </div>
+
+  <main id="mainContent">
+    <section class="hero-section" id="heroSection">
+      <div class="background-name"><span class="word">MELVERN</span><span class="word">MOGENS</span></div>
+      <div class="hero-content parallax-content">
+        <div id="skillTag" class="ai-developer-tag animated-element"><span id="typingText"></span><span class="cursor">|</span></div>
+        <h2 class="hero-name animated-element">
+          <span class="char">M</span><span class="char">e</span><span class="char">l</span><span class="char">v</span><span class="char">e</span><span class="char">r</span><span class="char">n</span><span class="char invisible-char"> </span><br />
+          <span class="char">M</span><span class="char">o</span><span class="char">g</span><span class="char">e</span><span class="char">n</span><span class="char">s</span>
+        </h2>
+        <p class="hero-description animated-element">
+          I’m a passionate software engineer and creative developer who thrives at the intersection of design and technology.
+          I enjoy crafting clean and responsive interfaces backed by powerful code. <strong>Excelsior.</strong>
+        </p>
+        <div class="hero-buttons animated-element">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="https://drive.google.com/file/d/13pcpf9UMzwTvMK8EPpr7110bKnZV0ThK/view?usp=sharing" target="_blank" class="btn secondary-btn">View Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutSection" class="story-section">
+      <div class="story-container">
+        <div class="story-photo animated-element"><img src="static/images/profile.jpg" alt="Melvern Profile Picture" /></div>
+        <div class="story-text animated-element">
+          <h2 class="section-title">My Story</h2>
+          <p>
+            Melvern is a Software Engineering student at <strong>Prasetiya Mulya University</strong> with hands-on experience in
+            <strong>C++</strong>, <strong>C</strong>, <strong>Java</strong>, <strong>Django</strong>, <strong>HTML</strong>,
+            <strong>CSS</strong>, <strong>Flutter</strong>, and <strong>PHP</strong>.
+          </p>
+          <p>
+            He is passionate about building strong technical foundations and continuously improving his skills across different technologies.
+            Right now, he’s focused on growing both his technical abilities and real-world experience to prepare for a career in software development.
+          </p>
+          <p>Melvern enjoys solving problems, learning new frameworks, and working on projects that challenge him to think critically and build better solutions.</p>
+        </div>
+        <div class="story-academics animated-element">
+          <h2 class="section-title">Academic Journey</h2>
+          <div class="academic-card">
+            <div class="academic-icon blue"><i class="fas fa-graduation-cap"></i></div>
+            <div class="academic-info">
+              <h3>S1 Software Engineering</h3>
+              <p class="university">Universitas Prasetiya Mulya</p>
+              <p class="details">Aug 2022 – Aug 2026</p>
+              <p class="details">Grade: CGPA 3.66</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skillsSection">
+      <div class="container-fluid skills-content">
+        <h3 class="section-title animated-element">My Skills</h3>
+        <p class="section-subtitle animated-element" style="transition-delay: 0.2s;">I believe a versatile skill set across development and design is key to building excellent user experiences.</p>
+        <div class="skills-grid">
+          <div class="skill-item animated-element" style="transition-delay: 0.3s;"><div class="skill-header"><span class="skill-name">Python</span><span class="skill-percent">100%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="100"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 0.4s;"><div class="skill-header"><span class="skill-name">Flutter</span><span class="skill-percent">95%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="95"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 0.5s;"><div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-percent">80%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="80"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 0.6s;"><div class="skill-header"><span class="skill-name">MySQL</span><span class="skill-percent">75%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="75"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 0.7s;"><div class="skill-header"><span class="skill-name">Django</span><span class="skill-percent">85%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="85"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 0.8s;"><div class="skill-header"><span class="skill-name">HTML</span><span class="skill-percent">95%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="95"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 0.9s;"><div class="skill-header"><span class="skill-name">C++</span><span class="skill-percent">75%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="75"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.0s;"><div class="skill-header"><span class="skill-name">Java</span><span class="skill-percent">75%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="75"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.1s;"><div class="skill-header"><span class="skill-name">Wordpress</span><span class="skill-percent">100%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="100"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.2s;"><div class="skill-header"><span class="skill-name">AI</span><span class="skill-percent">95%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="95"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.3s;"><div class="skill-header"><span class="skill-name">AWS</span><span class="skill-percent">90%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="90"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.4s;"><div class="skill-header"><span class="skill-name">PHP</span><span class="skill-percent">85%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="85"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.4s;"><div class="skill-header"><span class="skill-name">Figma</span><span class="skill-percent">85%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="85"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.5s;"><div class="skill-header"><span class="skill-name">Photoshop</span><span class="skill-percent">70%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="70"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.6s;"><div class="skill-header"><span class="skill-name">Canva</span><span class="skill-percent">85%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="85"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.7s;"><div class="skill-header"><span class="skill-name">Adobe Premiere</span><span class="skill-percent">80%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="80"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.8s;"><div class="skill-header"><span class="skill-name">Microsoft Excel</span><span class="skill-percent">90%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="90"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 1.9s;"><div class="skill-header"><span class="skill-name">English</span><span class="skill-percent">100%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="100"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 2.0s;"><div class="skill-header"><span class="skill-name">Mandarin</span><span class="skill-percent">85%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="85"></div></div></div>
+          <div class="skill-item animated-element" style="transition-delay: 2.1s;"><div class="skill-header"><span class="skill-name">Indonesian</span><span class="skill-percent">100%</span></div><div class="skill-bar-container"><div class="skill-bar" data-percent="100"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience-section" id="experienceSection">
+      <div class="container-fluid experience-content">
+        <h3 class="section-title animated-element">My Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item animated-element" style="transition-delay: 0.3s;">
+            <div class="timeline-image-col"><img src="static/images/nusameta.jpg" alt="IOT Intern" class="timeline-image" /></div>
+            <div class="timeline-content">
+              <h4>IOT Intern at PT Metaverse Indonesia Makmur</h4>
+              <span class="timeline-date">Aug 2025 - Dec 2025</span>
+              <p>Working as an IOT intern focusing on embedded systems, sensor integration, and data processing for innovative smart solutions.</p>
+              <p class="skills-used">IoT, Embedded Systems, Network Optimization</p>
+            </div>
+          </div>
+          <div class="timeline-item animated-element" style="transition-delay: 0.5s;">
+            <div class="timeline-image-col"><img src="static/images/invaders.jpg" alt="Game Master" class="timeline-image" /></div>
+            <div class="timeline-content">
+              <h4>Game Master at Invaders Board Game Station</h4>
+              <span class="timeline-date">Nov 2022 - May 2023 · 7 mos</span>
+              <p>Guided players through board game rules, organized engaging sessions, and maintained a fun environment.</p>
+              <p class="skills-used">Customer Service, Leadership, Event Management</p>
+            </div>
+          </div>
+          <div class="timeline-item animated-element" style="transition-delay: 0.7s;">
+            <div class="timeline-image-col"><img src="static/images/indah.jpg" alt="Treasurer" class="timeline-image" /></div>
+            <div class="timeline-content">
+              <h4>Treasurer Intern at PT. Indah Jaya</h4>
+              <span class="timeline-date">Apr 2022 - Jun 2022 · 3 mos</span>
+              <p>Managed financial operations, oversaw cash flow, and ensured accurate financial reporting.</p>
+              <p class="skills-used">Financial Reporting, Cash Flow Management, Excel</p>
+            </div>
+          </div>
+          <div class="timeline-item animated-element" style="transition-delay: 0.9s;">
+            <div class="timeline-image-col"><img src="static/images/remco.jpg" alt="PR Intern" class="timeline-image" /></div>
+            <div class="timeline-content">
+              <h4>Public Relations Intern at PT. Gemilang Hasil Bumi</h4>
+              <span class="timeline-date">Jul 2021 - Aug 2021 · 2 mos</span>
+              <p>Managed communications, built relationships, and supported branding and media activities.</p>
+              <p class="skills-used">Public Speaking, Negotiation, Branding, Communications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="honorsSection" class="honors-section">
+      <h3 class="section-title animated-element">Honors & Awards</h3>
+      <div class="honors-grid">
+        <div class="honor-card">
+          <div class="honor-image"><img src="static/images/award.jpg" alt="In2Food 2023 Award" /></div>
+          <div class="honor-content">
+            <span class="honor-badge">Competition</span>
+            <h3>2nd Winner – In2Food 2023 Innovation Competition</h3>
+            <p class="honor-meta">Issued by Universitas Prasetiya Mulya · Aug 2023</p>
+            <p class="honor-summary">Won second place in the In2Food 2023 competition focused on reducing food waste through innovative solutions.</p>
+            <button class="btn secondary-btn" onclick="openHonorModal()">View Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="honorModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeHonorModal()">&times;</span>
+        <img src="static/images/award.jpg" alt="In2Food 2023 Award" />
+        <h2>2nd Winner – In2Food 2023 Innovation Competition</h2>
+        <p><strong>Issued by:</strong> Universitas Prasetiya Mulya · Aug 2023</p>
+        <p><strong>Associated with:</strong> Universitas Prasetiya Mulya</p>
+        <p>
+          Won second place in the In2Food 2023 competition hosted by Universitas Prasetiya Mulya, focused on creating innovative solutions to reduce food waste.
+        </p>
+        <a href="https://www.kompas.com/edu/read/2023/08/21/120717271/in2food-2023-prasmul-mengubah-limbah-makanan-menjadi-bermakna" class="btn primary-btn" target="_blank">Read Article</a>
+      </div>
+    </div>
+<section id="projects" class="animated-element">
+  <div class="section-title">
+    <h3>Projects</h3>
+  </div>
+
+  <div class="layout-toggle">
+    <button class="layout-btn active" id="gridView"><i class="fas fa-th"></i> Grid</button>
+    <button class="layout-btn" id="listView"><i class="fas fa-list"></i> List</button>
+  </div>
+
+  <div class="projects-container grid-view">
+    <div class="project-card animated-element" style="--card-index:0">
+      <div class="project-image">
+        <img src="static/images/1.jpg" alt="Elex - E-commerce Website">
+      </div>
+      <div class="project-badges">
+        <span class="badge dev">Development</span>
+      </div>
+      <h3>Elex - E-commerce Website</h3>
+      <p>
+        Developed a fully functional e-commerce website using WordPress with custom domain, Xendit integration, and end-to-end deployment.
+      </p>
+      <div class="tech-stack">
+        <span>Wordpress</span><span>Xendit</span><span>PHP</span>
+      </div>
+    </div>
+
+    <div class="project-card animated-element" style="--card-index:1">
+      <div class="project-image">
+        <img src="static/images/2.jpg" alt="Yolov5">
+      </div>
+      <div class="project-badges">
+        <span class="badge dev">Machine Learning</span>
+      </div>
+      <h3>Yolov5 - Licensed Plate Detection</h3>
+      <p>
+        Created a YOLOv5-based license plate detector with Flask, handling data collection, training, deployment, and real-time accuracy tuning.
+      </p>
+      <div class="tech-stack">
+        <span>Yolov5</span><span>Flask</span>
+      </div>
+    </div>
+    <div class="project-card animated-element" style="--card-index:2">
+      <div class="project-image">
+        <img src="static/images/3.jpg" alt="Mobile App">
+      </div>
+      <div class="project-badges">
+        <span class="badge dev">Mobile App</span>
+      </div>
+      <h3>Flutter - Eduquest</h3>
+      <p>
+      Developed a learning app using Flutter and Django with user authentication, course tracking, and responsive UI/UX.
+      </p>
+      <div class="tech-stack">
+        <span>Flutter</span><span>Django</span><span>Figma</span>
+      </div>
+    </div>
+    <div class="project-card animated-element" style="--card-index:2">
+      <div class="project-image">
+        <img src="static/images/4.jpg" alt="Pygame">
+      </div>
+      <div class="project-badges">
+        <span class="badge dev">Pygame</span>
+      </div>
+      <h3>Pygame - Side Scroller</h3>
+      <p>
+Built a 2D side-scrolling game using PyGame with animations, scoring, user control, and basic collision logic.      </p>
+      <div class="tech-stack">
+        <span>Pygame</span>
+      </div>
+    </div>
+    <div class="project-card animated-element" style="--card-index:2">
+      <div class="project-image">
+        <img src="static/images/agus.png" alt="AI">
+      </div>
+      <div class="project-badges">
+        <span class="badge dev">AI</span>
+      </div>
+      <h3>Agus - AI Asisstant</h3>
+      <p>
+      Developed an AI Asisstant where it can answer using TTS (Text to Speech) and Hear using STT (Speech to text) it is also integrated with RAG (Retrieval Augmented).
+      </p>
+      <div class="tech-stack">
+        <span>Ollama</span><span>Flask</span><span>Coqui TTS</span>
+      </div>
+    </div>
+    <div class="project-card animated-element" style="--card-index:2">
+      <div class="project-image">
+        <img src="static/images/elisa.jpg" alt="Elisa">
+      </div>
+      <div class="project-badges">
+        <span class="badge dev">AI</span>
+      </div>
+      <h3>Elisa - AI Asisstant</h3>
+      <p>
+      Developed an AI Asisstant with Image RAG (Retrieval Augmented) implemented. Using the base model of Llava.
+      </p>
+      <div class="tech-stack">
+        <span>Llava</span><span>Flask</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer id="footer">
+  <div class="footer-content">
+    <p>© 2025 Melvern Mogens. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
