@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://melvernmogens.my.id/sitemap.xml
