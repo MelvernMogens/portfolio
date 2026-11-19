@@ -1,6 +1,6 @@
 # Melvern Mogens — Portfolio
 
-**Personal portfolio site: software & AI developer, live at [melvernmogens.my.id](https://melvernmogens.my.id/).**
+**Personal portfolio site: software & AI developer, live at [melvernmogens.com](https://melvernmogens.com/).**
 
 A static, single-page site with a raymarched ice-crystal hero, built without frameworks or a build step.
 
